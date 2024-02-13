@@ -1,0 +1,136 @@
+.login, .sign-up{
+   width: 100%;
+   height: 100vh;
+   background: $white-color;
+   color: $black-color;
+   .login-content, .sign-up-content{
+      padding: clamp(15px,4vw,30px) clamp(0px,4vw,40px);
+      height: 100%;
+      .registration-block{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin: 0 auto;
+         max-width: 650px;
+         margin-top: clamp(30px,3vw,100px);
+         padding-bottom: min(70px);
+         .login-shape{
+            padding: 12px 27px;
+            border-radius: 8px;
+            border: 1.5px solid #D6D6D6;
+            background: #F7F7F7;
+         }
+         h1{
+            font-size: clamp(30px,8vw,50px);
+            font-weight: 500;
+            padding-bottom: clamp(50px,4vw,75px);
+         }
+         .login-from-block{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .login-shape{
+               transition: $transition-time all linear;
+               cursor: pointer;
+               margin-right: 10px;
+               padding: 12px clamp(20px,6vw,40px);
+               &:last-child{
+                  margin-left: 10px;
+                  margin-right: 0px;
+               }
+               &:hover{
+                  transition: $transition-time all linear;
+                  background-color: $white-color;
+               }
+               display: flex;
+               p{
+                  font-size: clamp(18px,3vw,25px);
+                  text-wrap: nowrap;
+                  font-weight: 500;
+                  font-variant: all-small-caps;
+                  letter-spacing: 1.25px;
+                  padding-bottom: 2px;
+                  padding-left: 15px;
+               }
+            }
+         }
+         hr{
+            background-color: $black-color;
+            opacity: 0.2;
+            height: 1px;
+            margin: clamp(25px,4vw,45px) 0px;
+         }
+         .form-block{
+            padding-bottom: clamp(0px,4vw,45px);
+            form{
+               position: relative;
+               #WrongData{
+                  position: absolute;
+                  width: 100%;
+                  left: 0px;
+                  bottom: 10px;
+                  color: rgb(216, 39, 0);
+                  font-size: 12px;
+                  font-weight: 400;
+                  line-height: 10px;
+               }
+               input{
+                  margin-bottom: 25px;
+                  &:last-child{
+                     margin-bottom: 10px;
+                  }
+                  width: 100%;
+                  color: $black-color;
+                  opacity: 0.9;
+                  &::placeholder{
+                     color: $black-color;
+                     font-size: 20px;
+                     font-weight: 500;
+                     font-variant: all-small-caps;
+                     letter-spacing: 1.25px;
+                     opacity: 0.5;
+                  }
+               }
+               .pasword-input{
+                  display: flex;
+                  img{
+                     cursor: pointer;
+                     margin-top: 4px;
+                     height: 40px;
+                  }
+               }
+            }
+            .forgot-password{
+               font-size: 18px;
+               font-variant: all-small-caps;
+               letter-spacing: 1.25px;
+               width: 400;
+            }
+         }
+         .confirm-btn-block{
+            display: flex;
+            justify-content: center;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 580px) {
+   .login, .sign-up{
+      .login-content, .sign-up-content{
+         .registration-block{
+            .login-from-block{
+               .login-shape{
+                  width: 100%;
+                  margin-right: 0px;
+                  margin-bottom: 20px;
+                  &:last-child{
+                     margin-left: 0px;
+                     margin-bottom: 0px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,25 @@
+.main{
+   .search-place{
+      input{
+         &:focus{
+            border-right: 1px solid gray;
+         }
+      }
+      .content{
+         &::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+         }
+         &::-webkit-scrollbar-track {
+           border-radius: 10px;
+         }
+         &::-webkit-scrollbar-thumb {
+           border-radius: 10px;
+           background-color: grey;
+         }
+         &::-webkit-scrollbar-corner {
+            background-color: transparent;
+          }
+      }
+   }
+}

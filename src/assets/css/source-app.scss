@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './_base/tools';
+@import './_base/fonts';
+@import './_base/mixins';
+@import './_base/null-style';
+@import './_base/bootstrap';
+
+@import './_Home/main';
+
+@import './_welcome/main.scss';
+
+@import './_login/main.scss';
+
+@import './_price/main.scss';
+
+@import './_Main/main.scss';
+
+@import './_docs/main.scss';
+
+@import './_status/main.scss';
+
+@import './header.scss';
